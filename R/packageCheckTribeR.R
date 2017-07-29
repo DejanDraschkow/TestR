@@ -14,12 +14,12 @@ if (!require("EBImage")) {
     install.packages("png", dependencies = TRUE)
     library(png)
   }
-  
+
   if (!require("ggplot2")) {
     install.packages("ggplot2", dependencies = TRUE)
     library(ggplot2)
   }
-  
+
 if (!require("grid")) {
   install.packages("grid", dependencies = TRUE)
   library(grid)
@@ -29,13 +29,17 @@ if (!require("grid")) {
     install.packages("emov", dependencies = TRUE)
     library(emov)
   }
-  
+
 if (!require("reshape2")) {
     install.packages("reshape2", dependencies = TRUE)
     library(reshape2)
-  }  
-  
-  
+  }
+
+if (!require("dtplyr")) {
+    install.packages("dtplyr", dependencies = TRUE)
+    library(dtplyr)
+  }
+
 }
 
 
