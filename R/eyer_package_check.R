@@ -1,7 +1,7 @@
 
 
 
-packageCheckTribeR <- function(){
+EyerPackageCheck <- function(){
 
 
 if (!require("EBImage")) {
