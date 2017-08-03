@@ -35,14 +35,14 @@ if (!require("reshape2")) {
     library(reshape2)
   }
 
-if (!require("dtplyr")) {
-    install.packages("dtplyr", dependencies = TRUE)
-    library(dtplyr)
-  }
-
 if (!require("dplyr")) {
     install.packages("dplyr", dependencies = TRUE)
     library(dplyr)
+  }
+
+if (!require("dtplyr")) {
+    install.packages("dtplyr", dependencies = TRUE)
+    library(dtplyr)
   }
 
 }
