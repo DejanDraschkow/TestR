@@ -14,7 +14,14 @@ EyerImportBehavioralData <- function(raw.data.path){
     fileName <- gsub(".csv", "", file)
     jj$Participant <- factor(fileName)
     jj$start <- NULL
-    behav_dat <- bind_rows(behav_dat, jj)
+
+    # in case there is no dtplyr package - use plyr solution
+    if (!require("dtplyr")) {
+      behav_dat <- rbind.fill(behav_dat, jj)
+    }
+    else {
+      behav_dat <- bind_rows(behav_dat, jj)
+    }
 
     # Providing some feedback on processing progress.
     print(paste("The file:", file, "has been imported successfully.", sep = " "))

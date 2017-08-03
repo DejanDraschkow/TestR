@@ -35,6 +35,11 @@ if (!require("reshape2")) {
     library(reshape2)
   }
 
+if (!require("plyr")) {
+    install.packages("plyr", dependencies = TRUE)
+    library(dplyr)
+  }
+
 if (!require("dplyr")) {
     install.packages("dplyr", dependencies = TRUE)
     library(dplyr)
