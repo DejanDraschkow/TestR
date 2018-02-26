@@ -3,7 +3,7 @@ EyerImportRawData <- function(raw.data.path, poi.array){
   # Documentation here
   #
   # Args:
-  #
+  # #
   # Returns:
 
   dir.create(paste(raw.data.path, "sampleData", sep = ""), showWarnings = F)
